@@ -37,6 +37,7 @@
   }
 }
 
+/*form page*/
 .formContainer{
   background-color: #bde8f1;
   height: 100vh;
@@ -45,32 +46,15 @@
   justify-content: center;
 }
 
+/*inside the form and how the different div will be portrayed*/
 .formContainer > .formWrapper > form{
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/*Register page*/
-.formContainer > .formWrapper > form > input {
-  padding: 15px;
-  border: none;
-  border-bottom: 1px solid #0e59A0;
-  width: 250px;
-}
 
-.formContainer > .formWrapper > form >  label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #0e59A0;
-cursor: pointer;
-
-}
-.formContainer > .formWrapper > form >  label >img {
-  width: 32px;
-}
-
+/*form page main container*/
 .formWrapper{
   background-color: #f2f2f0;
   padding: 20px 60px;
@@ -81,18 +65,21 @@ cursor: pointer;
   align-items: center;
 }
 
+/*form page title*/
 .logo{
   color: #0e59A0;
   font-weight: bold;
   font-size: 24px;
 }
 
+/*form page title*/
 .title{
   color: #0d0d0d;
   font-weight: bold;
   font-size: 15px;
 }
 
+/*form page button*/
 button {
   background-color: #0e59A0;
   color: white;
@@ -100,4 +87,26 @@ button {
   font-weight: bolder;
   border: none;
   cursor: pointer;
+}
+
+/*Register page*/
+.formContainer > .formWrapper > form > input {
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #0e59A0;
+  width: 250px;
+}
+
+/*Register page adding file*/
+.formContainer > .formWrapper > form >  label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0e59A0;
+cursor: pointer;
+}
+
+/*Register page adding file image*/
+.formContainer > .formWrapper > form >  label >img {
+  width: 32px;
 }
