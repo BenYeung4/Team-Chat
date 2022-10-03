@@ -111,3 +111,12 @@ cursor: pointer;
 .formContainer > .formWrapper > form >  label >img {
   width: 32px;
 }
+
+/*Home page*/
+.home{
+  background-color: #bde8f1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
