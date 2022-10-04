@@ -7,6 +7,7 @@
   --darkblue: #0e59A0;
   --black: #0d0d0d;
   --red: #B22222;
+  --gray: gray;
 }
 
 .App {
@@ -164,6 +165,7 @@ background-color: var(--darkblue)
   color: var(--darkblue);
 }
 
+/*logo on messanger*/
 .sidebar> .navbar > .logo{
   font-weight: bold;
 }
@@ -173,6 +175,7 @@ background-color: var(--darkblue)
   gap: 10px;
 }
 
+/*user image on sidebar*/
 .sidebar > .navbar > .user > img {
   background-color: var(--skyblue);
   height: 24px;
@@ -181,6 +184,7 @@ background-color: var(--darkblue)
   object-fit: cover;
 }
 
+/*user logout button*/
 .sidebar > .navbar > .user > button {
   background-color: var(--red);
   font-size: 10px;
@@ -189,16 +193,19 @@ background-color: var(--darkblue)
   
 }
 
+/*search bar of other friends*/
 .search {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--gray);
 
 }
 
+/*search bar input*/
 .searchForm > input {
-  background-color: transparent;
+
   border: none;
 }
 
+/*person speaking to*/
 .userChat {
   padding: 10px;
   display: flex;
@@ -209,10 +216,13 @@ background-color: var(--darkblue)
 
 }
 
+/*hovering over the user */
 .userChat:hover{
-background-color: green;
+background-color: var(--white);
+color: var(--black)
 }
 
+/*other user's image*/
 .userChat > img {
   width: 50px;
   height: 50px;
@@ -221,8 +231,17 @@ background-color: green;
 
 }
 
+/*display user's info on the navbar*/
+.userChatInfo > span{
+  font-size: 18px; font-weight: 500;
+}
 
+/*dispaly message info on the user tab*/
+.userChatInfo > p{
+  font-size: 14px; color: lightgray;
+}
 
+/*loggedin username*/
 .username {
   font-weight: bold;
 }
