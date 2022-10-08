@@ -360,6 +360,7 @@ flex-direction: column;
 gap: 10px;
 }
 
+/*message from others, display from their end*/
 .messageContent > p{
   background-color: white;
   padding: 10px 20px;
@@ -376,10 +377,12 @@ gap: 10px;
   flex-direction: row-reverse;
 }
 
+/*if message is from user, make sure everything including image is pushed to the right*/
 .message.owner >.messageContent{
   align-items: flex-end;
 }
 
+/*if message is from user, then display from user*/
 .message.owner >.messageContent> p{
   background-color: var(--doraemonBlue);
   color: white;
