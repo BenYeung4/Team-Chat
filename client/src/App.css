@@ -280,8 +280,44 @@ cursor: pointer;
   background-color: var(--doraemonBlue);
   height: calc(100% - 160px);
 }
-.chat > .input {
+.chat > .messageInput {
   height:50px;
   background-color: var(--white);
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*send's submit message input */
+.chat > .messageInput > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*send's image icon */
+.send > img {
+  height: 24px;
+  cursor: pointer;
+}
+
+/*send's attachment icon */
+.send > label > img{
+  height: 24px;
+  cursor: pointer;
+}
+
+/*send's button */
+.send > button {
+  border: none;
+  padding: 10px 15px;
+  
 }
