@@ -1,13 +1,18 @@
 :root {
-  --yellow: yellow;
   --white: white;
   --babyblue: #61dafb;
   --skyblue: #bde8f1;
   --offwhite: #f2f2f0;
   --darkblue: #0e59A0;
   --black: #0d0d0d;
-  --red: #B22222;
   --gray: gray;
+  --lightgray:lightgray;;
+  --doraemonBlue: #51a1c4;
+  --doraemonWhite:	#e8eaea;
+  --doraemonRed: #b13f54;
+  --doraemonYellow: #ddb551;
+  --doraemoneBrown:#706948;
+
 }
 
 .App {
@@ -158,7 +163,7 @@ background-color: var(--darkblue)
 .sidebar > .navbar {
   display: flex;
   align-items: center;
-  background-color: var(--yellow);
+  background-color: var(--doraemonYellow);
   height: 50px;
   padding: 10px;
   justify-content: space-between;
@@ -186,7 +191,7 @@ background-color: var(--darkblue)
 
 /*user logout button*/
 .sidebar > .navbar > .user > button {
-  background-color: var(--red);
+  background-color: var(--doraemonRed);
   font-size: 10px;
   border: none;
   cursor: pointer;
@@ -238,10 +243,45 @@ color: var(--black)
 
 /*dispaly message info on the user tab*/
 .userChatInfo > p{
-  font-size: 14px; color: lightgray;
+  font-size: 14px; color: var(--lightgray);
 }
 
 /*loggedin username*/
 .username {
   font-weight: bold;
+}
+
+/*Chat section*/
+
+.chatInfo{
+  height: 50px;
+  background-color: var(--darkblue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: var(--lightgray)
+}
+
+/*chat icon*/
+.chatIcons{
+  display: flex;
+  gap: 10px;
+}
+
+.chatIcons > img{
+  height: 24px;
+cursor: pointer;
+}
+
+/*chat messages*/
+.chat > .messages {
+  padding: 10px;
+  background-color: var(--doraemonBlue);
+  height: calc(100% - 160px);
+}
+.chat > .input {
+  height:50px;
+  background-color: var(--white);
+  padding: 10px;
 }
